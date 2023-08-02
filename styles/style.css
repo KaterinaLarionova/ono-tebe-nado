@@ -10,9 +10,10 @@ body {
 .header {
     width: 1340px;
     height: 109px;
-    margin: 92px 49px 51px;
+    margin: 92px 49px 92px;
     display: grid;
     grid-template-columns: repeat(3, auto);
+    justify-content: space-between;
 }
 
 .header_menu {
@@ -31,7 +32,13 @@ body {
     display: grid;
     grid-template-columns: 67px 149px 108px;
     gap: 32px;
+    padding: 2px 1px 1px;
 }
+
+.header__links-list-item {
+    text-underline-offset: 5px;
+}
+
 .header_links_menu {
     text-decoration-skip-ink: none;
 }
@@ -43,6 +50,7 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: 24.3px; /* 135% */
+    text-underline-offset: 3px;
 }
 
 .without-decoration {
@@ -52,11 +60,16 @@ body {
 .dark-logo {
     width: 148px;
     height: 105px;
+    margin-right: 147px;
 }
 
+.header_address {
+    padding: 6px 1px;
+}
 .main-content {
     position: relative;
 }
+
 .overlay {
     position: absolute;
     width: 1440px;
@@ -65,6 +78,7 @@ body {
     opacity: 0.6000000238418579;
     z-index: 0;
 }
+
 .cover {
     background-image: url(../images/cover.jpg);
     background-repeat: no-repeat;
@@ -73,14 +87,13 @@ body {
     height: 757px;
     flex-shrink: 0;
     z-index:2;
-
 }
+
 .cover_title {
     display: flex;
     flex-direction: column;
     position: relative;
 }
-
 
 .aligned-text {
     justify-content: center;
@@ -92,7 +105,7 @@ body {
     line-height: 100%;
     letter-spacing: 30px;
     text-transform: uppercase;
-    margin: 165px 50px 0;
+    margin: 172px 50px 0;
 }
 
 .aligned-text_center {
@@ -106,12 +119,13 @@ body {
     letter-spacing: 30px;
     text-transform: uppercase;
     text-align: center;
+    margin-top: 28px;
 }
 
 .aligned-text_right {
     justify-content: center;
     color: #FFF;
-    margin: 0 50px 147px;
+    margin: 21px 21px 81px;
     font-family: Raleway;
     font-size: 100px;
     font-style: normal;
@@ -123,13 +137,13 @@ body {
 }
 
 .letter-spacing-extended {
-    letter-spacing: 50px;
+    letter-spacing: 59px;
 }
 
 .cover_description {
     color: #FFF;
     display: flex;
-    padding:55px;
+    padding:54px;
     justify-content: right;
     align-items: baseline;
     flex-direction: row;
@@ -142,13 +156,14 @@ body {
 }
 
 .cover_description-text {
-    word-spacing: 18px;
+    width: 633px;
+    word-spacing: 17px;
     z-index: 1;
 
 }
 .bet-button {
-    width: 257px;
-    height: 52px;
+    width: 251px;
+    height: 50px;
     color: #FFF;
     border: 1px solid #FFF;
     background-color: transparent;
@@ -165,11 +180,11 @@ body {
 .lots {
     width: 1340px;
     height: 579px;
-    margin:0 auto;
+    margin: 0 auto;
     margin-top: 180px;
 }
 
-.lots-heading{
+.lots-heading {
     color: #000;
     font-family: Raleway;
     font-size: 40px;
@@ -195,6 +210,7 @@ body {
     justify-content: space-between;
     list-style-type: none;
     min-height: 450px;
+    margin-bottom: 31px;
 }
 
 .lots_card-list-item {
@@ -221,7 +237,7 @@ body {
 
 .card {
     z-index: 1;
-    padding: 0 40px 50px;
+    padding: 0 40px 49px;
 }
 .card-text {
     color: #FFF;
@@ -255,6 +271,7 @@ body {
     text-decoration-skip-ink: none;
     text-decoration: underline;
     margin: 30px 0 0 40px;
+    text-underline-offset: 5px;
 }
 
 .about {
@@ -295,7 +312,7 @@ body {
 .about-column {
     display: inline-flex;
     /*height: 388px;*/
-    padding-bottom: 0px;
+    padding-left: 25px;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
@@ -311,7 +328,7 @@ body {
     font-weight: 700;
     line-height: normal;
     text-transform: uppercase;
-    margin:100px 0;
+    margin:102px 0;
 }
 
 .about-text {
@@ -324,10 +341,11 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    padding-bottom: 31px;
 }
 
 .text-part-one {
-    margin: 10px 0;
+    margin: -3px -1px;
 }
 
 .footer {
@@ -354,7 +372,8 @@ body {
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
-    line-height: 24.3px; /* 135% */
+    line-height: 25px; /* 135% */
+    text-underline-offset: 4px;
 }
 
 .footer_menu {
@@ -372,7 +391,7 @@ body {
     text-decoration-skip-ink: none;
 }
 
-.footer_menu_list_item {
+.footer_menu-list-item {
     color: #000;
     text-align: center;
     font-family: Raleway;
@@ -380,6 +399,7 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    text-underline-offset: 4px;
 }
 
 .footer_menu_link-active {
